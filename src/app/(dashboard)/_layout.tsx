@@ -1,6 +1,6 @@
-import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { View, Platform } from "react-native";
+import { Tabs } from "expo-router";
+import { Platform, View } from "react-native";
 
 export default function RootLayout() {
     return (
@@ -51,7 +51,7 @@ export default function RootLayout() {
                         }}>
                             <Ionicons
                                 name={focused ? "home" : "home-outline"}
-                                size={size}
+                                size={focused ? 20 : size}
                                 color={focused ? "#FFFFFF" : color}
                             />
                         </View>
@@ -74,7 +74,7 @@ export default function RootLayout() {
                         }}>
                             <Ionicons
                                 name={focused ? "grid" : "grid-outline"}
-                                size={size}
+                                size={focused ? 20 : size}
                                 color={focused ? "#FFFFFF" : color}
                             />
                         </View>
@@ -97,7 +97,7 @@ export default function RootLayout() {
                         }}>
                             <Ionicons
                                 name={focused ? "cart" : "cart-outline"}
-                                size={size}
+                                size={focused ? 20 : size}
                                 color={focused ? "#FFFFFF" : color}
                             />
                         </View>
@@ -127,7 +127,7 @@ export default function RootLayout() {
                         }}>
                             <Ionicons
                                 name={focused ? "receipt" : "receipt-outline"}
-                                size={size}
+                                size={focused ? 20 : size}
                                 color={focused ? "#FFFFFF" : color}
                             />
                         </View>
@@ -150,7 +150,7 @@ export default function RootLayout() {
                         }}>
                             <Ionicons
                                 name={focused ? "person" : "person-outline"}
-                                size={size}
+                                size={focused ? 20 : size}
                                 color={focused ? "#FFFFFF" : color}
                             />
                         </View>
