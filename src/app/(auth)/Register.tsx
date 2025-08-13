@@ -1,7 +1,7 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
-import React, { useState } from 'react';
+import { Ionicons } from "@expo/vector-icons";
 import { router } from 'expo-router';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import React, { useState } from 'react';
+import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function Register() {
     const [tipo, setTipo] = useState('cliente'); // 'cliente' ou 'vendedor'
@@ -63,10 +63,10 @@ export default function Register() {
                     <>
                         {/* Nome completo */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="user"
+                            <Ionicons
+                                name="person-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -77,10 +77,10 @@ export default function Register() {
 
                         {/* Telefone */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="phone"
+                            <Ionicons
+                                name="call-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -92,10 +92,10 @@ export default function Register() {
 
                         {/* Email */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="mail"
+                            <Ionicons
+                                name="mail-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -107,10 +107,10 @@ export default function Register() {
 
                         {/* Endereço */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="home"
+                            <Ionicons
+                                name="location-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -121,10 +121,10 @@ export default function Register() {
 
                         {/* Senha */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="lock"
+                            <Ionicons
+                                name="lock-closed-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -138,10 +138,10 @@ export default function Register() {
                     <>
                         {/* Nome empresa ou pessoal */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="idcard"
+                            <Ionicons
+                                name="business-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -152,10 +152,10 @@ export default function Register() {
 
                         {/* NIF */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="filetext1"
+                            <Ionicons
+                                name="document-text-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -166,10 +166,10 @@ export default function Register() {
 
                         {/* Telefone */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="phone"
+                            <Ionicons
+                                name="call-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -181,10 +181,10 @@ export default function Register() {
 
                         {/* Email */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="mail"
+                            <Ionicons
+                                name="mail-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -196,10 +196,10 @@ export default function Register() {
 
                         {/* Endereço */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="home"
+                            <Ionicons
+                                name="location-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput
@@ -210,10 +210,10 @@ export default function Register() {
 
                         {/* Senha */}
                         <View className="w-full mt-2 relative">
-                            <AntDesign
-                                name="lock"
+                            <Ionicons
+                                name="lock-closed-outline"
                                 size={24}
-                                color="black"
+                                color="#6B7280"
                                 style={{ position: 'absolute', top: 16, left: 16 }}
                             />
                             <TextInput

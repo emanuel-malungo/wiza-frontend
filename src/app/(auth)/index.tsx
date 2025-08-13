@@ -1,7 +1,7 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
-import React from 'react';
+import { Ionicons } from "@expo/vector-icons";
 import { router } from 'expo-router';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import React from 'react';
+import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function Login() {
     return (
@@ -31,24 +31,25 @@ export default function Login() {
 
                 {/* Email */}
                 <View className="w-full mt-6 relative">
-                    <AntDesign
-                        name="user"
+                    <Ionicons
+                        name="mail-outline"
                         size={24}
-                        color="black"
+                        color="#6B7280"
                         style={{ position: 'absolute', top: 16, left: 16 }}
                     />
                     <TextInput
                         placeholder="Email"
+                        keyboardType="email-address"
                         className="w-full bg-white rounded-full p-4 pl-14"
                     />
                 </View>
 
                 {/* Senha */}
                 <View className="w-full mt-4 relative">
-                    <AntDesign
-                        name="lock"
+                    <Ionicons
+                        name="lock-closed-outline"
                         size={24}
-                        color="black"
+                        color="#6B7280"
                         style={{ position: 'absolute', top: 16, left: 16 }}
                     />
                     <TextInput
