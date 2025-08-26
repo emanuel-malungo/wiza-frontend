@@ -106,10 +106,14 @@ export default function Home() {
       >
         <View style={styles.headerContent}>
           <View style={styles.headerLeft}>
-            <Image 
-              source={{ uri: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face' }}
-              style={styles.avatar}
-            />
+			{/* icon (logo) app Wiza */}
+			<View style={styles.logoContainer}>
+				<Image
+					source={require('../../assets/img/iconWiza.png')}
+					style={styles.logo}
+					resizeMode="contain"
+				/>
+			</View>
           </View>
           
           <View style={styles.headerRight}>
@@ -316,6 +320,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     flex: 1,
+  },
+  logoContainer: {
+    // backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    // padding: 8,
+    // borderRadius: 12,
+    // marginRight: 12,
+    // shadowColor: '#000',
+    // shadowOffset: { width: 0, height: 2 },
+    // shadowOpacity: 0.1,
+    // shadowRadius: 4,
+    // elevation: 3,
+  },
+  logo: {
+    width: 82,
+    height: 42,
   },
   headerRight: {
     flexDirection: 'row',
