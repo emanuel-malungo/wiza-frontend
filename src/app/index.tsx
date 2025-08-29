@@ -21,7 +21,7 @@ export default function Index() {
 
         <TouchableOpacity
         className="w-full bg-[#34DB7B] rounded-full p-4 mb-4"
-        onPress={() => router.push("/(driver)")}
+        onPress={() => router.push("/(passenger)")}
       >
         <Text className="text-center text-white font-bold">Home</Text>
       </TouchableOpacity>
